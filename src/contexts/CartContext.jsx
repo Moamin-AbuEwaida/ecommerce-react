@@ -78,10 +78,9 @@ const CartProvider = ({ children }) => {
         }
       });
       setCart(newCart);
-    } else {
-      if (cartItem.amount < 2) {
-        removeFromCart(id);
-      }
+    }
+    if (cartItem.amount < 2) {
+      removeFromCart(id);
     }
   };
 
