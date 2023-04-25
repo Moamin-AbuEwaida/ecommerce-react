@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/ecommerce-react' element={<Home />} />
           <Route path='/product/:id' element={<ProductDetails />} />
         </Routes>
         <Sidebar />
